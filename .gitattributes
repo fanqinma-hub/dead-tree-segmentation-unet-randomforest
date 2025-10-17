@@ -1,0 +1,21 @@
+# 默认所有文本文件统一用 LF
+* text=auto eol=lf
+
+# 把 Jupyter notebook 当作二进制文件，不做行尾转换，避免 diff 脏变更
+*.ipynb -text
+
+# 常见数据文件当作二进制（避免无意义 diff）
+*.csv -text
+*.tsv -text
+*.xlsx -text
+*.pkl -text
+*.h5 -text
+
+# 图片和模型文件也不做行尾转换
+*.png -text
+*.jpg -text
+*.jpeg -text
+*.gif -text
+*.pt -text
+*.pth -text
+*.onnx -text

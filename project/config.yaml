@@ -1,0 +1,8 @@
+data_root: data/UAV
+train_split: group/USA_segmentation/splits/train.txt
+val_split:   group/USA_segmentation/splits/val.txt
+in_ch: 3
+n_classes: 2
+batch_size: 4
+lr: 3e-4
+epochs: 30
